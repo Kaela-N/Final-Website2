@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stage Managing</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300&family=Combo&family=Pompiere&display=swap" rel="stylesheet">
+	</head>
+<body>
+	<div id="navbar">
+		<a href="index.html">Home</a>
+		<a href="lighting.html">Lighting</a>
+		<a href="sm.html">Stage Managing</a>
+		<a href="webdesign.html">Web Design</a>
+		<a href="psych.html">Psychology</a>
+		<a href="extras.html">Extras</a>
+	  </div>
+    <br>
+    <br>
+	<img src="stagemanaging.png" alt="lighting moodboard" width="100%">
+    <p><b>From props to lights,</b> my three years in theatre before I stagemanaged my first show prepared me for this experience. <i><b>Head Over Heels </b></i>was the 2024 fall jukebox musical that I stage managed this year.</p>
+    <h1 style="font-size:3vw">HEAD OVER HEELS</h1>
+    <div class="leftimgalign" style="background-color:#eae7ec">
+        <div class="two-images">
+          <a href="https://sites.google.com/s.dcsdk12.org/headoverheels/home" target="_blank">
+            <img src="hohsite.png" alt="picture of website" style="width:30vw">
+          </a>
+          <img src="hohdrive.png" alt="picture of google drive" style="width:30vw">
+        </div>
+        <div class="rightside">
+          <p style="margin-left:3vw;">Taking inspiration from the orginization and methods of previous stage managers, I created a website and Google Drive to be centers of information that anyone in the cast or crew could access. I designed the lights and wrote the cues that I then called for the light board operator during the actual shows in addition to helping anywhere else that I was needed.</p>
+            </div>
+            </div>
+    <br>
+    <br>
+    <div class="imgcards">
+    <img src="showpic1.JPG" alt="show pic1" style="width:30vw">
+    <img src="castparty.jpg" alt="cast party pic" style="width:30vw">
+    <img src="showpic2.jpg" alt="show pic2" style="width:30vw">
+  </div>
+</body>
+</html>
+
+<script>
+	/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>

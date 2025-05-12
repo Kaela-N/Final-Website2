@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Final Website</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300&family=Combo&family=Pompiere&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+<body>
+	<div id="navbar">
+		<a href="index.html">Home</a>
+		<a href="lighting.html">Lighting</a>
+		<a href="sm.html">Stage Managing</a>
+		<a href="webdesign.html">Web Design</a>
+		<a href="psych.html">Psychology</a>
+		<a href="extras.html">Extras</a>
+	  </div>
+	<img src="home.png" alt="homepage moodboard" width="100%">
+		<div class="center">
+			<h2>WELCOME!</h2>
+			<p style="margin-left:1vw; font-size:1vw">My name is Kaela Norris, currently a senior at Mountain Vista High School. This website serves as a portfolio for my interests, plans for the future, and past achievements. In the near future, I plan to attend Arapahoe Community College after high-school for psychology before attending a university for grad school. Possible options for university include the University of Calgary or somewhere on the North-West side of the United States.</p>
+			<br>	
+			<div class="icons">
+				<a href="https://www.instagram.com/kaela.norris?igsh=azB3ZHo4NHB1cjF0" target="_blank">
+					<img src="instagram icon.png" alt="instagram" width="60vw" style="margin-right:1vw"> 
+				</a>
+				<a href="mailto:88aceofclubs88@gmail.com" target="_blank">
+					<img src="gmail icon.png" alt="email" width="60vw" style="margin-left:1vw">
+				</a>
+			</div>
+		</div>
+	<h2>CLICK ONE TO LEARN MORE!</h2>
+	<br>
+	<div class="icons">
+		<a href="lighting.html">
+			<img src="light-icon.png" alt="lighting icon" class="indvicons" width="150vw">
+		</a>
+		<a href="sm.html">
+			<img src="binder-icon.png" alt="stage managing icon" class="indvicons" width="150vw">
+		</a>
+		<a href="webdesign.html">
+			<img src="web-icon.png" alt="web design icon" class="indvicons" width="150vw">
+		</a>
+		<a href="psych.html">
+			<img src="brain-icon.png" alt="psychology icon" class="indvicons" width="150vw">
+		</a>
+		<a href="extras.html">
+			<img src="camera-icon.png" alt="extra icon" class="indvicons" width="150vw">
+		</a>
+	</div>
+</body>
+</html>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Extras</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300&family=Combo&family=Pompiere&display=swap" rel="stylesheet">
+	</head>
+<body>
+    <div id="navbar">
+        <a href="index.html">Home</a>
+		<a href="lighting.html">Lighting</a>
+		<a href="sm.html">Stage Managing</a>
+		<a href="webdesign.html">Web Design</a>
+		<a href="psych.html">Psychology</a>
+		<a href="extras.html">Extras</a>
+    </div>
+	<img src="extras.png" alt="lighting moodboard" width="100%">
+    <p style="background-color:#e8ede6; padding:2vw; font-size:1.5vw">Some of my other hobbies I am proud of include photography, scrapbooking, and crocheting. In addition, I have a very cute dog and an ugly cat ☻</p>
+    <h1>PHOTOGPRAHY</h1>
+    <div class="extras">
+        <div class="indvex">
+            <h2 class="leftside" style="background-color:#E3B8B5;padding:0.25vw;font-size:2vw;">Canada</h2>
+        </div>
+        <div class="exrightside">
+            <img src="peace-bridge.JPG" alt="peace bridge" style="width:15vw; margin-right:1vw"> 
+            <img src="record-store.JPG" alt="record store" style="width:15vw; margin-left:1vw">
+        </div>
+        <div class="indvex">
+            <h2 class="leftside" style="background-color:#BFCDB7;padding:0.25vw;font-size:2vw;">Botanical Gardens</h2>
+        </div>
+        <div class="exrightside">
+            <img src="greenhouse.JPG" alt="picture of greenhouse" style="width:15vw; margin-right:1vw"> 
+            <img src="anthurium.JPG" alt="close up picture of anthurium" style="width:15vw; margin-left:1vw">
+        </div>
+    </div>
+    <br>
+    <br>
+    <h1>FRIENDS + PETS</h1>
+    <div class="eximgcards">
+        <img src="chadnico.jpg" alt="picture of gray cat" style="width:15vw; margin-right:1vw"> 
+        <img src="mina+nico.jpg" alt="picture of dog and cat" style="width:15vw; margin-left:1vw; margin-right:1vw"> 
+        <img src="nicosportsmode.jpeg" alt="picture of gray cat2" style="width:15vw; margin-left:1vw">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="eximgcards">
+        <img src="mina.jpg" alt="picture of dog" style="width:15vw; margin-right:2vw">
+        <img src="mina+co.JPG" alt="picture of dog and friends" style="width:15vw; margin-left:2vw;">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="extras">
+        <div class="indvex">
+            <h1 class="leftside" style="background-color:#C38646;padding:0.25vw;">SCRAPBOOKING</h1>
+        </div>
+        <div class="exrightside">
+            <img src="lightfog.jpg" alt="scrapbooking img1" style="width:15vw; margin-right:1vw"> 
+            <img src="royaloak.jpg" alt="scrapbooking img2" style="width:15vw; margin-left:1vw">
+        </div>
+        <div class="indvex">
+            <h1 class="leftside" style="background-color:#AF7073;padding:0.25vw;">CROCHETING</h1>
+        </div>
+        <div class="exrightside">
+            <img src="sakurablossom.jpg" alt="crocheted cherry blossom" style="width:15vw; margin-right:1vw"> 
+            <img src="sunflower.jpg" alt="crocheted sunflower book sleeve" style="width:15vw; margin-left:1vw">
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+	/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>

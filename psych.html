@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Psychology</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300&family=Combo&family=Pompiere&display=swap" rel="stylesheet">
+	</head>
+<body>
+	<div id="navbar">
+		<a href="index.html">Home</a>
+		<a href="lighting.html">Lighting</a>
+		<a href="sm.html">Stage Managing</a>
+		<a href="webdesign.html">Web Design</a>
+		<a href="psych.html">Psychology</a>
+		<a href="extras.html">Extras</a>
+	  </div>
+  <br>
+  <br>
+	<img src="psychology.png" alt="psychology header" width="100%">
+  <h1>WHY PSYCHOLOGY?</h1>
+  <div class="rightimgalign" style="background-color:#f0e7ea;">
+    <p class="leftside" style="margin-right:10vw; margin-left:5vw; font-size:1.5vw">I became very inspired to study psychology while taking AP Psychology in my Junior year. I found the phenomenons and studies very interesting. I also realized I would love to be in a career where I'm helping people in the way I have also been helped by being in therapy myself.</p>
+    <img src="brainposter.jpg" alt="fav unit/phenomenon pic" class="rightside" style="width:20vw; margin-right:4vw; margin-bottom:1.25vw;">
+  </div>
+  <br>
+  <h1>EXPERIENCES AND WORK</h1>
+  <p style="background-color:#f0e7ea; padding:2vw; font-size:1.25vw">At my current age, there is not much I can do to gain experience. I have acquired my CPR and BLS certifications in order to be able to work in a hospital as a sitter but I will only be able to do so once I turn 18. In the meantime, I'm wokring to save up money for college. My only experience in psychology has been taking AP Psychology and Sociology, classes where I had opportunities to observe people such as through <b>natural observation</b>  where I studied people as they went about their days without them being aware of it. In Sociology, my final paper was on the fear adolscents may fear as they grow up and transition into adults. Lastly, last semester, in my ENG 101 class, my final was a paper on how music can affect people's behavior. Other than that, I also often ask my friends for feedback on how well I'm listening to them talk about things they open about to me and what I can do to better support each one of them individually. I also go to therapist of my own every other week where I learn from her and sometimes talk to her about her experiences in becoming a therapist. <b>Below are examples of some of these projects </b> in addition to my favorite assignment from AP Psychology.</p>
+  <br>
+    <div class="psychimgcards">
+      <div class="slideshow-container2">
+        <div class="mySlides fade">
+          <img src="1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="5.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="7.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="9.jpg" style="width:100%">
+        </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <a href="https://docs.google.com/document/d/1o-euYSrsCFOmYrTnAiJOqRvpqQNykIFibG5inHucIzE/edit?usp=sharing" target="_blank">
+        <img src="sociology-survey1.png" alt="sociology google form results" style="width:20vw" class="psych">
+      </a>
+      <a href="https://docs.google.com/document/d/1mGZMBGuBGqpWiXR4gaTmEqiYI9wmNoZmO6S6_bMRS58/edit?usp=sharing" target="_blank">
+        <img src="music.png" alt="english final presentation" style="width:20vw" class="psych">
+      </a>
+    </div>
+</body>
+</html>
+
+<script>
+	/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>

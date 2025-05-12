@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web Design</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300&family=Combo&family=Pompiere&display=swap" rel="stylesheet">
+	</head>
+<body>
+  <div id="navbar">
+    <a href="index.html">Home</a>
+    <a href="lighting.html">Lighting</a>
+    <a href="sm.html">Stage Managing</a>
+    <a href="webdesign.html">Web Design</a>
+    <a href="psych.html">Psychology</a>
+    <a href="extras.html">Extras</a>
+  </div>
+  <br>
+  <br>
+  <img src="webdesign.png" alt="lighting moodboard" width="100%">
+  <br>
+  <br>
+  <div class="leftimgalign" style="background-color:#FFF3EB;">
+    <a href="https://kaela-n.github.io/Passion-Page/">
+      <img src="flowerwebsite.jpg" alt="picture of flower website" width="350vw" class="webdesign">
+    </a>
+    <p style="margin-left:2.5vw; font-size:1.5vw;"><b>Web design </b>has been my first time ever taking any kind of class like this but I've enjoyed the creative freedom and technical aspects of it so much. I've learned so much about what goes into creating a website and the skeleton and code of a page. It's changed the way I look at any website from now on and it has been a fun and challenging class.</p>
+  </div>
+  <br>
+  <h1>OTHER WORKS</h1>
+  <div class="imgcards">
+    <a href="https://kaela-n.github.io/Wish-Week-2025/">
+      <img src="wishweek.png" alt="wish week website" style="width:30vw" class="webdesign"> 
+    </a>
+    <a href="https://kaela-n.github.io/PseudoQuote/">
+      <img src="quotepage.png" alt="quote page" style="width:30vw" class="webdesign">
+    </a>
+  </div>
+  <br>
+  <br>
+  <div class="imgcards">
+    <a href="https://kaela-n.github.io/Web-Form-Practice/">
+      <img src="form.png" alt="html form website" style="width:30vw" class="webdesign"> 
+    </a>
+    <a href="https://kaela-n.github.io/MadLibs/">
+      <img src="madlibs.png" alt="mad libs website" style="width:30vw" class="webdesign">
+    </a>
+  </div>
+</body>
+</html>
+
+<script>
+	/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
